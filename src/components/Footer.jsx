@@ -30,13 +30,13 @@ const Footer = () => (
         </a>
       ))}
     </div>
-    <abbr title="Source Code" className={style.p}>
-      <a href="https://github.com/Rhaegar121/Portfolio" target="_blank" className={style.a} rel="noreferrer">
-        Brought into being by
+    <abbr title="Home Page" className={style.p}>
+      <a href="#" className={style.a} rel="noreferrer">
+        Developed with ❤️ by
         {' '}
         <span className={style.span}>©</span>
         {' '}
-        Kaung Myat Kyaw
+        Om Verma
       </a>
     </abbr>
   </div>

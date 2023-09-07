@@ -11,7 +11,7 @@ const Testimonial = () => (
     <motion.h1 variants={textVariant()} className={style.title}>
       Testimonials
     </motion.h1>
-    <motion.p variants={fadeIn('', '', 0.15, 1)} className={style.subtitle}>What my coding partners say about me -</motion.p>
+    <motion.p variants={fadeIn('', '', 0.15, 1)} className={style.subtitle}>What my coding partners and clients say about me -</motion.p>
     <div className={style.card_container}>
       {/* Testimonials card */}
       {testimonials.map((testimonial, index) => (
@@ -28,10 +28,6 @@ const Testimonial = () => (
               speed: 450,
             }}
           >
-            <div className={style.header}>
-              <FaQuoteLeft className={style.openquote} />
-              <img className={style.img} src={testimonial.image} alt="profile" />
-            </div>
             <p className={style.para}>{testimonial.text}</p>
             <div className={`${style.label} ${style.firstlabel}`}>
               <p className={style.name}>
@@ -60,7 +56,7 @@ const Testimonial = () => (
       ))}
     </div>
     <motion.div variants={fadeIn('', '', 0.15, 1)} className={style.recommendationsLink}>
-      <a href="https://www.linkedin.com/in/kaungmyatkyaw/details/recommendations/?detailScreenTabIndex=0" target="_blank" className={style.a} rel="noreferrer">More recommendations here</a>
+      <a href="https://www.linkedin.com/in/omverma18/" target="_blank" className={style.a} rel="noreferrer">More recommendations here</a>
     </motion.div>
   </div>
 );

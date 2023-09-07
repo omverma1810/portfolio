@@ -13,21 +13,21 @@ const Home = () => (
   >
     <div className={style.container}>
       <p className={style.intro}>
-        Hi, I&apos;m
+        Hey 👋, I&apos;m
         {' '}
         <motion.span variants={fadeIn('', '', 0.1, 1)} className={style.name}>
-          Kaung Myat Kyaw
+          Om Verma
         </motion.span>
       </p>
       <p className={style.intro}>
-        But you can call me
+        Techie &
         {' '}
         <motion.span variants={fadeIn('', '', 0.3, 1)} className={style.name}>
-          Barry
+          Developer
         </motion.span>
       </p>
       <motion.p variants={fadeIn('', '', 0.5, 1)} className={style.desc}>
-        I am a full-stack web developer
+        I am a full-stack web developer (MERN), React-Native developer, ML enthusiast and a Cloudie-Nerd.
       </motion.p>
       <motion.button
         variants={fadeIn('', '', 0.6, 1)}
@@ -40,10 +40,10 @@ const Home = () => (
         }}
       >
         <span className={style.btn_hover}>
-          Check out my work
+        Know more about me!
         </span>
         <span className={style.btn}>
-          Check out my work
+          Know more about me!
         </span>
         <MdOutlineArrowForwardIos className={style.arrow} />
       </motion.button>

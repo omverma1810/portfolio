@@ -24,6 +24,7 @@ import trackbudget from './projects/trackbudget.png';
 import carrental from './projects/carrental.png';
 
 // carousel img
+
 import guesstheword1 from './carousels/guess the word screenshot 1.png';
 import guesstheword2 from './carousels/guess the word screenshot 2.png';
 import guesstheword3 from './carousels/guess the word screenshot 3.png';

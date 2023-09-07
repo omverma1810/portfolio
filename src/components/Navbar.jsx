@@ -61,7 +61,7 @@ const Navbar = () => {
           ))}
           <li>
             <a
-              href="https://drive.google.com/file/d/1gienfnTWEgMC_R2P7t-JVSQC9L_4lLxv/view?usp=sharing"
+              href="https://drive.google.com/file/d/1xF4qQuaO4GKj7LxMd_y972qMWDids0Pw/view?usp=sharing"
               target=" blank"
               className={style.resume_container}
             >
@@ -121,12 +121,12 @@ const Navbar = () => {
               variants={fadeIn('right', '', 1, 1)}
               initial="hidden"
               whileInView="show"
-              href="https://drive.google.com/file/d/1gienfnTWEgMC_R2P7t-JVSQC9L_4lLxv/view?usp=sharing"
+              href="https://drive.google.com/file/d/1xF4qQuaO4GKj7LxMd_y972qMWDids0Pw/view?usp=sharing"
               target=" blank"
               className={`${style.resume_container} ${style.mobile_resume_container}`}
             >
               <span className={`${style.resume_hover} ${style.font}`}>
-                Resume
+                My Resume
               </span>
               <span className={`${style.resume} ${style.font}`}>Resume</span>
             </motion.a>

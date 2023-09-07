@@ -1,9 +1,4 @@
 import React, { useState } from 'react';
-import markerIcon from 'leaflet/dist/images/marker-icon.png';
-import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
-import {
-  MapContainer, TileLayer, Marker, Popup,
-} from 'react-leaflet';
 import L from 'leaflet';
 import { motion } from 'framer-motion';
 import SectionWrapper from '../hoc';
@@ -13,16 +8,7 @@ import 'leaflet/dist/leaflet.css';
 
 delete L.Icon.Default.prototype._getIconUrl;
 
-const customIcon = new L.Icon({
-  iconUrl: markerIcon,
-  iconRetinaUrl: markerIcon2x,
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  tooltipAnchor: [16, -28],
-  shadowSize: [41, 41],
-  shadowAnchor: [12, 41],
-});
+
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -46,7 +32,7 @@ const Contact = () => {
     const form = event.target;
     const isValid = form.checkValidity();
     if (isValid) {
-      // Submit the form
+
       form.submit();
       setForm({
         name: '',
@@ -62,13 +48,13 @@ const Contact = () => {
         Get in Touch!
       </motion.h1>
       <motion.p variants={fadeIn('', '', 0.15, 1)} className={style.subtitle}>
-        I&apos;m always excited to hear about new opportunities and collaborations. Don&apos;t hesitate to reach out and let&apos;s make something great.
+      I look forward to collaborating with you and achieving remarkable results together.
       </motion.p>
       <div className={style.container}>
         <motion.form
           variants={slideIn('left', '', 0, 1)}
           onSubmit={handleSubmit}
-          action="https://formspree.io/f/mgeqgkdd"
+          action="#"
           method="post"
           className={style.form}
         >
@@ -107,27 +93,6 @@ const Contact = () => {
             <span className={style.btn}>Get in touch</span>
           </button>
         </motion.form>
-        <motion.div variants={slideIn('right', '', 0, 1)} className={style.mapContainer}>
-          <MapContainer center={[16.799355, 96.154826]} zoom={13} scrollWheelZoom={false}>
-            <TileLayer
-              url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}{r}.png"
-              attribution="© OpenStreetMap contributors"
-            />
-            <Marker position={[16.799355, 96.154826]} icon={customIcon}>
-              <Popup>
-                Wanna have a virtual coffee?
-                {' '}
-                <br />
-                {' '}
-                Send me a message.
-              </Popup>
-            </Marker>
-            <div className={style.info}>
-              <p>Kaung Myat Kyaw</p>
-              <p>Yangon, Myanmar</p>
-            </div>
-          </MapContainer>
-        </motion.div>
       </div>
     </>
   );

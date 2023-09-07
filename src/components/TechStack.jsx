@@ -17,7 +17,7 @@ const TechStack = () => {
 
   return (
     <>
-      <motion.p variants={fadeIn('', '', 0.75, 1)} className={style.title}>Here are a few technologies I`ve been working with recently:</motion.p>
+      <motion.p variants={fadeIn('', '', 0.75, 1)} className={style.title}>The technologies I use are as follows:</motion.p>
       <motion.div variants={fadeIn('', '', 1.5, 1)} className={style.btn_container}>
         {stacks.map((currentStack) => (
           <button
