@@ -55,6 +55,7 @@ const Contact = () => {
           variants={slideIn('left', '', 0, 1)}
           onSubmit={handleSubmit}
           action="#"
+          netlify
           method="post"
           className={style.form}
         >
