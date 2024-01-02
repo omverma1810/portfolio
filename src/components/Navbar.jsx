@@ -61,7 +61,7 @@ const Navbar = () => {
           ))}
           <li>
             <a
-              href="https://drive.google.com/file/d/1xF4qQuaO4GKj7LxMd_y972qMWDids0Pw/view?usp=sharing"
+              href="https://drive.google.com/file/d/1qjjVOKwJ4y8bsPmnv6NiSzgg0Qi0Neoj/view?usp=sharing"
               target=" blank"
               className={style.resume_container}
             >
